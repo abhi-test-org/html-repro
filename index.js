@@ -27,7 +27,6 @@ const RENDER_HTML = ({ args }) => {
       e.context = {
         path: page,
       };
-      console.log("Hi from Abhi :) we errored");
       reject(e);
     }
   });

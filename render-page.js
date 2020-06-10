@@ -885,7 +885,7 @@
             if (
               typeof react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext !==
                 `function` &&
-              "development" === `development`
+              "production" === `development`
             ) {
               throw new Error(
                 `You're likely using a version of React that doesn't support Hooks\n` +
@@ -1226,13 +1226,12 @@ useStaticQuery(graphql\`${query}\`);
                         });
                         pageResources = toPageResources(pageData, component);
                         finalResult.payload = pageResources;
-                        _emitter__WEBPACK_IMPORTED_MODULE_2__["default"].emit(
-                          `onPostLoadPageResources`,
-                          {
-                            page: pageResources,
-                            pageResources,
-                          }
-                        );
+                        _emitter__WEBPACK_IMPORTED_MODULE_2__[
+                          "default"
+                        ].emit(`onPostLoadPageResources`, {
+                          page: pageResources,
+                          pageResources,
+                        });
                       }
                       this.pageDb.set(pagePath, finalResult); // undefined if final result is an error
                       return pageResources;
@@ -1912,7 +1911,6 @@ useStaticQuery(graphql\`${query}\`);
             if (!bodyHtml) {
               try {
                 bodyHtml = renderToString(bodyComponent);
-                console.log("yoooo");
               } catch (e) {
                 // ignore @reach/router redirect errors
                 if (!isRedirect(e)) throw e;
@@ -4856,7 +4854,7 @@ useStaticQuery(graphql\`${query}\`);
             imageVariants.forEach(function (variant) {
               return (variant.media ? withMedia : without).push(variant);
             });
-            if (without.length > 1 && "development" !== "production") {
+            if (without.length > 1 && "production" !== "production") {
               console.warn(
                 "We've found " +
                   without.length +
@@ -8272,7 +8270,7 @@ useStaticQuery(graphql\`${query}\`);
            * will remain to ensure logic does not differ in production.
            */
 
-          var NODE_ENV = "development";
+          var NODE_ENV = "production";
 
           var invariant = function (condition, format, a, b, c, d, e, f) {
             if (NODE_ENV !== "production") {
@@ -34200,7 +34198,7 @@ object-assign
         /*! exports provided: app, component---src-pages-404-js, component---src-pages-index-js, component---src-templates-blog-post-js, default */
         /***/ function (module) {
           module.exports = JSON.parse(
-            '{"app":["/app-96b1678d16641f539e4e.js"],"component---src-pages-404-js":["/component---src-pages-404-js-33f5b7df996ee0a9eb16.js"],"component---src-pages-index-js":["/component---src-pages-index-js-eba4cff5376cb63b9679.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-bfd3ea23a318808445ba.js"]}'
+            '{"app":["/app-e45595a1df0fea3186f7.js"],"component---src-pages-404-js":["/component---src-pages-404-js-26fe1f71bfbc1399128f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-4ba12f761746492f31c3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-f0c0914ccdda0395b93a.js"]}'
           );
 
           /***/
@@ -34239,7 +34237,7 @@ object-assign
         /*! exports provided: errors, warnings, namedChunkGroups, assetsByChunkName, default */
         /***/ function (module) {
           module.exports = JSON.parse(
-            '{"errors":[],"warnings":[],"namedChunkGroups":{"app":{"chunks":[8,6,7,2],"assets":["webpack-runtime-96a9e8876dd7d9541ba7.js","webpack-runtime-96a9e8876dd7d9541ba7.js.map","framework-0c4e331c8113736a8e78.js","framework-0c4e331c8113736a8e78.js.map","styles.491a16106869c73de5f8.css","styles-58f10908d170de05bc54.js","styles-58f10908d170de05bc54.js.map","app-96b1678d16641f539e4e.js","app-96b1678d16641f539e4e.js.map"],"children":{},"childAssets":{}},"component---src-pages-404-js":{"chunks":[0,3],"assets":["commons-533efd48e894bc33e4e9.js","commons-533efd48e894bc33e4e9.js.map","component---src-pages-404-js-33f5b7df996ee0a9eb16.js","component---src-pages-404-js-33f5b7df996ee0a9eb16.js.map"],"children":{},"childAssets":{}},"component---src-pages-index-js":{"chunks":[0,1,4],"assets":["commons-533efd48e894bc33e4e9.js","commons-533efd48e894bc33e4e9.js.map","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js.map","component---src-pages-index-js-eba4cff5376cb63b9679.js","component---src-pages-index-js-eba4cff5376cb63b9679.js.map"],"children":{},"childAssets":{}},"component---src-templates-blog-post-js":{"chunks":[0,1,5],"assets":["commons-533efd48e894bc33e4e9.js","commons-533efd48e894bc33e4e9.js.map","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js.map","component---src-templates-blog-post-js-bfd3ea23a318808445ba.js","component---src-templates-blog-post-js-bfd3ea23a318808445ba.js.map"],"children":{},"childAssets":{}}},"assetsByChunkName":{"app":["webpack-runtime-96a9e8876dd7d9541ba7.js","framework-0c4e331c8113736a8e78.js","styles.491a16106869c73de5f8.css","styles-58f10908d170de05bc54.js","app-96b1678d16641f539e4e.js"],"component---src-pages-404-js":["commons-533efd48e894bc33e4e9.js","component---src-pages-404-js-33f5b7df996ee0a9eb16.js"],"component---src-pages-index-js":["commons-533efd48e894bc33e4e9.js","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js","component---src-pages-index-js-eba4cff5376cb63b9679.js"],"component---src-templates-blog-post-js":["commons-533efd48e894bc33e4e9.js","cd7d5f864fc9e15ed8adef086269b0aeff617554-fcb0ba0dccf09a1789d3.js","component---src-templates-blog-post-js-bfd3ea23a318808445ba.js"]}}'
+            '{"errors":[],"warnings":[],"namedChunkGroups":{"app":{"chunks":[7,5,6,1],"assets":["webpack-runtime-2c8c8dc9c24093a1446a.js","webpack-runtime-2c8c8dc9c24093a1446a.js.map","framework-8ade979d0ea7a5c04f12.js","framework-8ade979d0ea7a5c04f12.js.map","styles.491a16106869c73de5f8.css","styles-f9206ef9b067ca362f8d.js","styles-f9206ef9b067ca362f8d.js.map","app-e45595a1df0fea3186f7.js","app-e45595a1df0fea3186f7.js.map"],"children":{},"childAssets":{}},"component---src-pages-404-js":{"chunks":[0,2],"assets":["cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js","cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js.map","component---src-pages-404-js-26fe1f71bfbc1399128f.js","component---src-pages-404-js-26fe1f71bfbc1399128f.js.map"],"children":{},"childAssets":{}},"component---src-pages-index-js":{"chunks":[3],"assets":["component---src-pages-index-js-4ba12f761746492f31c3.js","component---src-pages-index-js-4ba12f761746492f31c3.js.map"],"children":{},"childAssets":{}},"component---src-templates-blog-post-js":{"chunks":[0,4],"assets":["cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js","cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js.map","component---src-templates-blog-post-js-f0c0914ccdda0395b93a.js","component---src-templates-blog-post-js-f0c0914ccdda0395b93a.js.map"],"children":{},"childAssets":{}}},"assetsByChunkName":{"app":["webpack-runtime-2c8c8dc9c24093a1446a.js","framework-8ade979d0ea7a5c04f12.js","styles.491a16106869c73de5f8.css","styles-f9206ef9b067ca362f8d.js","app-e45595a1df0fea3186f7.js"],"component---src-pages-404-js":["cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js","component---src-pages-404-js-26fe1f71bfbc1399128f.js"],"component---src-pages-index-js":["component---src-pages-index-js-4ba12f761746492f31c3.js"],"component---src-templates-blog-post-js":["cd452b49d389fa37db2ec3695d2527add9564add-533efd48e894bc33e4e9.js","component---src-templates-blog-post-js-f0c0914ccdda0395b93a.js"]}}'
           );
 
           /***/
@@ -34582,10 +34580,17 @@ object-assign
         /*!****************************!*\
   !*** ./src/pages/index.js ***!
   \****************************/
-        /*! exports provided: default, pageQuery */
+        /*! exports provided: BlogIndex, default, pageQuery */
         /***/ function (module, __webpack_exports__, __webpack_require__) {
           "use strict";
           __webpack_require__.r(__webpack_exports__);
+          /* harmony export (binding) */ __webpack_require__.d(
+            __webpack_exports__,
+            "BlogIndex",
+            function () {
+              return BlogIndex;
+            }
+          );
           /* harmony export (binding) */ __webpack_require__.d(
             __webpack_exports__,
             "pageQuery",
@@ -34602,77 +34607,51 @@ object-assign
           /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
             /*! gatsby */ "./.cache/gatsby-browser-entry.js"
           );
-          /* harmony import */ var _components_bio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-            /*! ../components/bio */ "./src/components/bio.js"
-          );
-          /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-            /*! ../components/layout */ "./src/components/layout.js"
-          );
-          /* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-            /*! ../components/seo */ "./src/components/seo.js"
-          );
-          /* harmony import */ var _utils_typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-            /*! ../utils/typography */ "./src/utils/typography.js"
-          );
-          const BlogIndex = ({ data, location }) => {
-            const siteTitle = data.site.siteMetadata.title;
-            const posts = data.allMarkdownRemark.edges;
+          // import Bio from "../components/bio"
+          // import Layout from "../components/layout"
+          // import SEO from "../components/seo"
+          // import { rhythm } from "../utils/typography"
+          // const BlogIndex = ({ data, location }) => {
+          //   const siteTitle = data.site.siteMetadata.title
+          //   const posts = data.allMarkdownRemark.edges
+          //   return (
+          //     <Layout location={location} title={siteTitle}>
+          //       <SEO title="All posts" />
+          //       <Bio />
+          //       {posts.map(({ node }) => {
+          //         const title = node.frontmatter.title || node.fields.slug
+          //         return (
+          //           <article key={node.fields.slug}>
+          //             <header>
+          //               <h3
+          //                 style={{
+          //                   marginBottom: rhythm(1 / 4),
+          //                 }}
+          //               >
+          //                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+          //                   {title}
+          //                 </Link>
+          //               </h3>
+          //               <small>{node.frontmatter.date}</small>
+          //             </header>
+          //             <section>
+          //               <p
+          //                 dangerouslySetInnerHTML={{
+          //                   __html: node.frontmatter.description || node.excerpt,
+          //                 }}
+          //               />
+          //             </section>
+          //           </article>
+          //         )
+          //       })}
+          //     </Layout>
+          //   )
+          // }
+          const BlogIndex = () => {
             return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-              _components_layout__WEBPACK_IMPORTED_MODULE_3__["default"],
-              { location: location, title: siteTitle },
-              /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                _components_seo__WEBPACK_IMPORTED_MODULE_4__["default"],
-                { title: "All posts" }
-              ),
-              /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                _components_bio__WEBPACK_IMPORTED_MODULE_2__["default"],
-                null
-              ),
-              posts.map(({ node }) => {
-                const title = node.frontmatter.title || node.fields.slug;
-                return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                  "article",
-                  { key: node.fields.slug },
-                  /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    "header",
-                    null,
-                    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                      "h3",
-                      {
-                        style: {
-                          marginBottom: Object(
-                            _utils_typography__WEBPACK_IMPORTED_MODULE_5__[
-                              "rhythm"
-                            ]
-                          )(1 / 4),
-                        },
-                      },
-                      /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"],
-                        { style: { boxShadow: `none` }, to: node.fields.slug },
-                        title
-                      )
-                    ),
-                    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                      "small",
-                      null,
-                      node.frontmatter.date
-                    )
-                  ),
-                  /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    "section",
-                    null,
-                    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                      "p",
-                      {
-                        dangerouslySetInnerHTML: {
-                          __html: node.frontmatter.description || node.excerpt,
-                        },
-                      }
-                    )
-                  )
-                );
-              })
+              "p",
+              null,
+              "HELLO WORLD"
             );
           };
           /* harmony default export */ __webpack_exports__[
